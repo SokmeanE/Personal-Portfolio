@@ -5,7 +5,6 @@ import { Link } from "react-scroll";
 
 const NavBar = () => {
     const [nav, setNav] = useState(false);
-
     const links = [
         {
             id: 1,
@@ -13,7 +12,7 @@ const NavBar = () => {
         },
         {
             id: 2,
-            link: 'portfolio'
+            link: 'experiences'
         },
         {
             id: 3,
@@ -27,7 +26,7 @@ const NavBar = () => {
             {links.map(({id, link}) => (
                 <li 
                     key={id} 
-                    className="px-4 cursor-pointer capitalize font-medium text-gray-400">
+                    className="px-4 cursor-pointer capitalize font-bold text-sky-600 hover:text-gray-600 duration-300">
                     <Link to={link} smooth duration={500}>
                     {link}
                     </Link>
@@ -42,14 +41,15 @@ const NavBar = () => {
                 {links.map(({id, link}) => (
                     <li 
                         key={id} 
+                        onClick={FaTimes}
                         className="px-4 cursor-pointer capitalize py-6">
-                        {link}
+                        <Link to={link} smooth duration={500}>
+                            {link}
+                        </Link>
                     </li>
                     ))}
             </ul>
-            )}
-
-            
+            )}  
         </div>
     );
 };
