@@ -32,7 +32,7 @@ const Portfolio = () => {
         },
     ]
   return (
-    <div name='experiences' className='w-full md:h-screen'>
+    <div name='experiences' className='w-full md:h-screen py-8 my-24 sm:p-10'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col
         justify-center w-full h-full'>
             <div className='pb-8'>
