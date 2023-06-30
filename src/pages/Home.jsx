@@ -6,7 +6,7 @@ import PfImage from './../assets/ESokmean.jpg';
 const Home = () => {
   const [showContact, setShowContact] = useState(false);
   return (
-    <div name="home" className="h-screen w-full sm:p-10">
+    <div name="home" className="h-screen w-full sm:p-10 sm:py-36">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center
       justify-center h-full px-4 md:flex-row">
         <div className='flex flex-col justify-center h-full'>
@@ -30,7 +30,7 @@ const Home = () => {
         </div>
         <div>
           <img src={PfImage} alt="E Sokmean"
-         className="rounded-2xl mx-auto w-2/3 md:w-3/6"/>
+         className="rounded-2xl mx-auto w-2/3 md:w-3/6 mb-10"/>
         </div>
       </div>
       <Contact isVisible={showContact} onClose={() => setShowContact(false)} />

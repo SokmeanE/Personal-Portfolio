@@ -32,7 +32,7 @@ const Portfolio = () => {
         },
     ]
   return (
-    <div name='experiences' className='w-full md:h-screen py-8 my-24 sm:p-10'>
+    <div name='experiences' className='w-full md:h-screen py-36 my-24 sm:p-10 sm:py-36'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col
         justify-center w-full h-full'>
             <div className='pb-8'>
@@ -44,8 +44,11 @@ const Portfolio = () => {
                 portfolios.map(({id, src, title, h3, dcp, tech}) => (
                 
                 <div key={id} className='shadow-md shadow-gray-500 rounded-lg '>
+                    <div className='justify-center justify-items-center'>
                     <img src={src} alt=""
-                    className='rounded-t duration-200 hover:scale-105 h-44' />
+                    className='rounded-t duration-200 hover:scale-105 h-44 sm:w-full' />
+                    </div>
+                    
                     <div className='items-center justify-center'>
                         <div className='text-gray-500 text-center text-3xl pt-8 pb-2'>{title}</div>
                         <h3 className='text-sky-600 text-center text-xl py-1'>{h3}</h3>
