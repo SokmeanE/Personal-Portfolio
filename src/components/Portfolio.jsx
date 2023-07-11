@@ -46,7 +46,7 @@ const Portfolio = () => {
                 <div key={id} className='shadow-md shadow-gray-500 rounded-lg '>
                     <div className='justify-center justify-items-center'>
                     <img src={src} alt=""
-                    className='rounded-t duration-200 hover:scale-105 h-44 sm:w-full' />
+                    className='rounded-t duration-200 hover:scale-105 h-44 sm:max-w-full' />
                     </div>
                     
                     <div className='items-center justify-center'>
@@ -60,8 +60,6 @@ const Portfolio = () => {
                     <h3 className='text-sky-600 text-center py-1'>Technologies </h3>
                     <p className='text-center py-5 px-8'>{tech}</p>
                 </div>
-                
-            
                 ))
             }
             </div>
