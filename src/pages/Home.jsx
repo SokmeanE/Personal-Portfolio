@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div name="home" className="h-screen w-full sm:p-10 sm:py-36">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center
-      justify-center h-full px-4 md:flex-row">
+      justify-center h-full px-4 mb:py-8 md:flex-row">
         <div className='flex flex-col justify-center h-full'>
             <h2 className='text-4xl sm:text-6xl font-bold text-sky-600'>E Sokmean</h2>
             <h2 className='text-2xl sm:text-4xl font-bold text-teal-900'>Software Engineer</h2>
@@ -18,7 +18,7 @@ const Home = () => {
             <div>
               <button onClick={() => setShowContact(true)} 
               className='group text-white w-fit px-6 py-3 my-2
-              flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+              flex items-center rounded-md bg-sky-600 cursor-pointer'>
                 Contact Me
                 <span className='group-hover:rotate-90 duration-300'>
                   <MdOutlineKeyboardArrowRight size={25} className='ml-1'/>
